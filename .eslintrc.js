@@ -2,31 +2,31 @@ module.exports = {
   root: true,
   env: { browser: true, es2020: true },
   extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh'],
+  ignorePatterns: ["dist", ".eslintrc.cjs"],
+  parserOptions: { ecmaVersion: "latest", sourceType: "module" },
+  settings: { react: { version: "18.2" } },
+  plugins: ["react-refresh"],
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
+    "react-refresh/only-export-components": [
+      "warn",
       { allowConstantExport: true },
     ],
     "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off",
+    "react/prop-types": "0",
     "no-console": "off",
     "no-loop-func": ["error"],
-    "eqeqeq": ["error", "always"],
-    "strict": ["error", "global"],
+    eqeqeq: ["error", "always"],
+    strict: ["error", "global"],
     "max-nested-callbacks": [
       "error",
       {
-        "max": 7
-      }
+        max: 7,
+      },
     ],
     "new-parens": ["error"],
     "no-unneeded-ternary": ["error"],
@@ -37,12 +37,12 @@ module.exports = {
     "space-unary-ops": [
       "error",
       {
-        "words": true,
-        "nonwords": false,
-        "overrides": {
-          "typeof": false
-        }
-      }
+        words: true,
+        nonwords: false,
+        overrides: {
+          typeof: false,
+        },
+      },
     ],
     "no-unreachable": ["error"],
     "no-global-assign": ["error"],
@@ -51,8 +51,8 @@ module.exports = {
     "no-constant-condition": [
       "error",
       {
-        "checkLoops": false
-      }
+        checkLoops: false,
+      },
     ],
     "no-useless-concat": ["error"],
     "no-useless-escape": ["error"],
@@ -60,16 +60,16 @@ module.exports = {
     "no-use-before-define": [
       "error",
       {
-        "functions": false
-      }
+        functions: false,
+      },
     ],
     "arrow-body-style": ["error", "as-needed"],
     "arrow-spacing": ["error"],
     "no-confusing-arrow": [
       "error",
       {
-        "allowParens": true
-      }
+        allowParens: true,
+      },
     ],
     "no-useless-computed-key": ["error"],
     "no-useless-rename": ["error"],
@@ -81,7 +81,7 @@ module.exports = {
     "no-cond-assign": "off",
     "no-irregular-whitespace": "error",
     "no-unexpected-multiline": "error",
-    "curly": ["error", "multi-line"],
+    curly: ["error", "multi-line"],
     "guard-for-in": "error",
     "no-caller": "error",
     "no-extend-native": "error",
@@ -96,19 +96,19 @@ module.exports = {
     "no-unused-vars": [
       "error",
       {
-        "args": "none"
-      }
+        args: "none",
+      },
     ],
     "array-bracket-newline": "off",
     "array-bracket-spacing": ["error", "never"],
     "array-element-newline": "off",
     "block-spacing": ["error", "never"],
     "brace-style": "error",
-    "camelcase": [
+    camelcase: [
       "error",
       {
-        "properties": "never"
-      }
+        properties: "never",
+      },
     ],
     "comma-dangle": ["error", "only-multiline"],
     "comma-spacing": "error",
@@ -116,37 +116,37 @@ module.exports = {
     "computed-property-spacing": "error",
     "eol-last": "error",
     "func-call-spacing": "error",
-    "indent": [
+    indent: [
       "error",
       2,
       {
-        "CallExpression": {
-          "arguments": 1
+        CallExpression: {
+          arguments: 1,
         },
-        "FunctionDeclaration": {
-          "body": 1,
-          "parameters": 2
+        FunctionDeclaration: {
+          body: 1,
+          parameters: 2,
         },
-        "FunctionExpression": {
-          "body": 1,
-          "parameters": 2
+        FunctionExpression: {
+          body: 1,
+          parameters: 2,
         },
-        "MemberExpression": 1,
-        "ObjectExpression": 1,
-        "SwitchCase": 1,
-        "ignoredNodes": ["ConditionalExpression"]
-      }
+        MemberExpression: 1,
+        ObjectExpression: 1,
+        SwitchCase: 1,
+        ignoredNodes: ["ConditionalExpression"],
+      },
     ],
     "key-spacing": "error",
     "keyword-spacing": "error",
     "max-len": [
       "error",
       {
-        "code": 80,
-        "tabWidth": 2,
-        "ignoreUrls": true,
-        "ignorePattern": "goog.(module|require)"
-      }
+        code: 80,
+        tabWidth: 2,
+        ignoreUrls: true,
+        ignorePattern: "goog.(module|require)",
+      },
     ],
     "new-cap": "error",
     "no-array-constructor": "error",
@@ -154,8 +154,8 @@ module.exports = {
     "no-multiple-empty-lines": [
       "error",
       {
-        "max": 2
-      }
+        max: 2,
+      },
     ],
     "no-new-object": "error",
     "no-tabs": "error",
@@ -164,31 +164,31 @@ module.exports = {
     "one-var": [
       "error",
       {
-        "var": "never",
-        "let": "never",
-        "const": "never"
-      }
+        var: "never",
+        let: "never",
+        const: "never",
+      },
     ],
     "operator-linebreak": ["error", "after"],
     "padded-blocks": ["error", "never"],
     "quote-props": ["error", "consistent"],
-    "quotes": [
+    quotes: [
       "error",
       "double",
       {
-        "allowTemplateLiterals": true
-      }
+        allowTemplateLiterals: true,
+      },
     ],
-    "semi": "error",
+    semi: "error",
     "semi-spacing": "error",
     "space-before-blocks": "error",
     "space-before-function-paren": [
       "error",
       {
-        "asyncArrow": "always",
-        "anonymous": "never",
-        "named": "never"
-      }
+        asyncArrow: "always",
+        anonymous: "never",
+        named: "never",
+      },
     ],
     "spaced-comment": ["error", "always"],
     "switch-colon-spacing": "error",
@@ -200,12 +200,12 @@ module.exports = {
     "prefer-const": [
       "error",
       {
-        "destructuring": "all"
-      }
+        destructuring: "all",
+      },
     ],
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "rest-spread-spacing": "error",
-    "yield-star-spacing": ["error", "after"]
-  }
-}
+    "yield-star-spacing": ["error", "after"],
+  },
+};
