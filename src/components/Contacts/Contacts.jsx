@@ -2,7 +2,7 @@ import s from "./Contacts.module.scss";
 
 export const Contacts = () => (
   <div className={s.contacts}>
-    <a className={`${s.phone} ${s.link}`} href="tel:+7 (939) 839 12 97">
+    <a className={`${s.phone} ${s.link}`} href="tel:+79398391297">
       <svg
         width="16"
         height="16"
