@@ -1,3 +1,9 @@
+.header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #EEEFF2;
+}
+
 .container {
     display: grid;
     gap: 16px;
@@ -17,13 +23,25 @@
 
     .logo {
         grid-area: logo;
+        width: 94px;
     }
 
     .search {
         grid-area: search;
+        width: 100%;
 
-        .navigation {
-            grid-area: navigation;
+        @media (min-width: 820px) {
+            max-width: 408px;
+            justify-self: center;
+        }
+
+        @media (min-width: 1120px) {
+            max-width: 514px;
         }
     }
-}
+    .navigation {
+            grid-area: navigation;
+            
+        }
+    }
+
